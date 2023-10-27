@@ -1,0 +1,4 @@
+# SITIO-DJANGO
+Ruta: http://localhost:8000/admin
+Usuario: root password: root123
+#ESTE SITIO SIMULA UN FRONT DE UNA TIENDA DE SUPLEMENTOS USANDO DJANGO 
