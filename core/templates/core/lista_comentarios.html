@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div id="content">
+    <h1 class="text-center">Comentarios de Usuarios</h1>
+    <div class="row">
+        {% for comentario in comentarios %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre de Usuario: {{ comentario.nombre_usuario }}</h5>
+                        <p class="card-text">Comentario: {{ comentario.comentario }}</p>
+                        <p class="card-text">Calificación: {{ comentario.calificacion }}</p>
+                        <p class="card-text">Fecha de Ingreso: {{ comentario.fecha_ingreso }}</p>
+                        <p class="card-text">Fecha de Actualización: {{ comentario.fecha_actualizacion }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

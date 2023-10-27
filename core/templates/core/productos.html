@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{% static 'core/img/proteina.png' %}" height="250" width="250">
+            <div class="card-body">
+                <h5 class="card-title">PROTEINA ISO100</h5>
+                <p class="card-text">Proteinas</p>
+                <button type="button" class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{% static 'core/img/proteina1.png' %}" height="250" width="250">
+            <div class="card-body">
+                <h5 class="card-title">PROTEINA NITROTECH</h5>
+                <p class="card-text">Proteinas</p>
+                <button type="button" class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{% static 'core/img/proteina2.png' %}" height="250" width="250">
+            <div class="card-body">
+                <h5 class="card-title">PROTEINA RATION</h5>
+                <p class="card-text">Proteinas</p>
+                <button type="button" class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% block inicio_content %}
+{% load static %}
+
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'core/img/cbum.jpg' %}" alt="..." />
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">Consigue tu Sumplemento</span>
+                    <span class="section-heading-lower">CHILESUPLEMENTOS</span>
+                </h2>
+                <p class="mb-3"> Encuentra en nuestra tienda de suplementos la clave para potenciar tu salud y alcanzar tus metas fitness. Ofrecemos una selección premium de suplementos de alta calidad que te ayudarán a optimizar tu nutrición y desatar tu máximo potencial. Descubre el camino hacia una vida más saludable y activa con nuestros productos líderes en el mercado."</p>
+                <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="/productos/">Comprar ya!</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+    <!-- Otro contenido específico para la página de inicio -->
+{% endblock %}

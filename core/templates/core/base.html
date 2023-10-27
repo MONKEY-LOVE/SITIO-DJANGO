@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA CHILESUPLEMENTOS | 2023</title>
+    {% load static %}
+    <script src="{% static 'core/js/script.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/styles.css' %}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <img src="{% static 'core/img/banner.png' %}" alt="Mi Imagen">
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="/">CHILESUPLEMENTOS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/">Inicio</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/comentarios/">Review Comentarios</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/about/">Quien Somos</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/productos/">Productos</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="/horario/">Horario</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div id="rightcolumn">
+            {% block inicio_content %}{% endblock %}
+        </div>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; CHILESUPLEMENTOS 2023</p></div>
+        </footer>
+    </div>
+</body>
+</html>
